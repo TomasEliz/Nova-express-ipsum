@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Express Ipsum Generator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main id="container">
+        <div id="grid-container">
+            <h1 id="header">Nova Express Ipsum</h1>
+            <div id="text-container"></div>
+            <form id="form">
+                <div class="input-div">
+                    <input type="radio" name="amount" id="words">
+                    <label for="amount-of-words">Words</label>
+                </div>
+                <div class="input-div">
+                    <input type="radio" name="amount" id="paragraphs">
+                    <label for="amount-of-paragraphs">Paragraphs</label>
+                </div>
+                <input type="number" name="number-of-elements" id="number-of-elements" min="1">
+                <input type="submit" value="Generate" id="generate-btn">
+            </form>
+        </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

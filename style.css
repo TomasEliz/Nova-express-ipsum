@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  background-image: url(./cover1.png);
+  background-attachment: fixed;
+}
+#container {
+  width: 70%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: rgba(21, 104, 104,0);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+#grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: minmax(0, auto) minmax(20rem, auto);
+  grid-row-gap: 5rem;
+  grid-template-areas:
+    "header header header header"
+    ". tc tc form";
+}
+h1 {
+  width: 50%;
+  color: rgb(241, 241, 241);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  margin-top: 20rem;
+  padding: 1rem;
+  font-family: "Kanit", sans-serif;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  grid-area: header;
+  justify-self: center;
+}
+#text-container {
+  min-height: 10rem;
+  padding: 3rem;
+  font-family: "Kanit", sans-serif;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  color: rgb(241, 241, 241);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-radius: 25px;
+  grid-area: tc;
+}
+form {
+  width: 70%;
+  max-height: 20rem;
+  display: grid;
+  grid-row-gap: 1rem;
+  grid-area: form;
+  background-color: rgba(173, 163, 163, 0.6);  
+  border-radius: 25px;
+  padding: 1rem;
+}
+form > * {
+  width: 100%;
+  border-radius: 5px;
+}
+.input-div {
+  background: rgba(0, 8, 31, 0.8);
+  color: rgb(241, 241, 241);
+  backdrop-filter: blur(30px);
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  text-shadow: 0 0 1px rgba(241, 241, 241, .3);
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+.input-div > :first-child {
+  margin-right: 1rem;
+}
+
+#number-of-elements {
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
+}
+#generate-btn {
+  width: 40%;
+  justify-self: end;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+  background-color: rgb(204, 27, 27);
+  color: rgb(241, 241, 241);
+  font-weight: 600;
+  cursor: pointer;
+}
+#generate-btn:hover {
+  background-color: rgb(141, 3, 3);
+  transition: .4s;
+}
