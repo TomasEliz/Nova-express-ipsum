@@ -8,8 +8,8 @@
 }
 body {
   font-size: 1.6rem;
-  font-family: sans-serif;
-  background-image: url(./cover1.png);
+  font-family: "Kanit", sans-serif;
+  background-image: url(./cover.png);
   background-attachment: fixed;
 }
 #container {
@@ -31,22 +31,20 @@ body {
     ". tc tc form";
 }
 h1 {
-  width: 50%;
+  margin-top: 20rem;
+  padding: 1rem 5rem;
   color: rgb(241, 241, 241);
   background: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
-  margin-top: 20rem;
-  padding: 1rem;
-  font-family: "Kanit", sans-serif;
+  border-radius: 10px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   text-align: center;
+  letter-spacing: 3px;
   grid-area: header;
   justify-self: center;
 }
 #text-container {
   min-height: 10rem;
   padding: 3rem;
-  font-family: "Kanit", sans-serif;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(30px);
   color: rgb(241, 241, 241);
@@ -69,14 +67,14 @@ form > * {
   border-radius: 5px;
 }
 .input-div {
+  display: flex;
+  align-items: center;
   background: rgba(0, 8, 31, 0.8);
   color: rgb(241, 241, 241);
   backdrop-filter: blur(30px);
   font-family: "Kanit", sans-serif;
   font-weight: 600;
   text-shadow: 0 0 1px rgba(241, 241, 241, .3);
-  display: flex;
-  align-items: center;
   padding: 0 1rem;
 }
 .input-div > :first-child {
@@ -92,17 +90,24 @@ form > * {
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
 }
 #generate-btn {
-  width: 40%;
+  width: fit-content;
+  height: fit-content;
   justify-self: end;
+  padding: .5rem 3rem;
+  color: rgb(241, 241, 241);
+  font-family: "Kanit", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: .7px;
   border: none;
   outline: none;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
   background-color: rgb(204, 27, 27);
-  color: rgb(241, 241, 241);
-  font-weight: 600;
+  
   cursor: pointer;
 }
 #generate-btn:hover {
-  background-color: rgb(141, 3, 3);
+  background-color: rgb(255, 0, 0);
+  transform: scale(1.05);
   transition: .4s;
 }
