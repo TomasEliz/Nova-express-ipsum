@@ -9,7 +9,7 @@
 body {
   font-size: 1.6rem;
   font-family: "Kanit", sans-serif;
-  background-image: url(./cover.png);
+  background-image: url(./images/cover.png);
   background-attachment: fixed;
 }
 #container {
