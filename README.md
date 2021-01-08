@@ -1,5 +1,6 @@
 
-# Nova-express-ipsum
+# Nova-express-ipsum 
+#### [ HTML, CSS, JS ]
 
 This dummy-text generator uses excerption from Nova Express, an experimental novel by William S. Burrough, written using  the 'fold-in' method, a version of the 'cut-up' method. The app generates output by cutting-up the selected text that is stored in two variables.
 
